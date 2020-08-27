@@ -1,10 +1,11 @@
-/*
- *Package name is com.stackroute
- * Scanner is imported from java.util
- * Class name is Pattern
- */
 package com.stackroute;
 import java.util.Scanner;
+/*
+ *This class contains a method to print the following patttern
+ *
+ **
+ ***
+ */
 public class Pattern {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);

@@ -1,6 +1,8 @@
 package com.stackroute;
 import java.util.Scanner;
-
+/*
+ *This class contains a method to sort the array elements
+ */
 public class SortedArray {
 
     public static void main(String[] args) {
@@ -25,9 +27,9 @@ public class SortedArray {
                 }
             }
         }
-        for (i = 0; i < size-1; i++) {
+        for (i = 0; i < size - 1; i++) {
             System.out.print(myarray[i] + " ");
         }
-        System.out.println(myarray[size-1]);
+        System.out.println(myarray[size - 1]);
     }
 }

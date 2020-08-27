@@ -1,12 +1,15 @@
 package com.stackroute;
 import java.util.Scanner;
+/*
+ *This class contains a method used to perform arithmetic operations
+ */
 public class Calculator {
 
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         int choice;
-        int number1;
-        int number2;
+        int numberOne;
+        int numberTwo;
         String ch = "yes";
         System.out.println("1.Add");
         System.out.println("2.Subtract");
@@ -15,36 +18,34 @@ public class Calculator {
 
         System.out.println("Enter a choice to perform operation");
         choice = reader.nextInt();
-        do
-        {
+        do {
             System.out.println("Enter first number");
-            number1 = reader.nextInt();
+            numberOne = reader.nextInt();
             System.out.println("Enter second number");
-            number2 = reader.nextInt();
-            switch(choice)
-            {
+            numberTwo = reader.nextInt();
+            switch (choice) {
                 case 1:
-                    int sum = number1 + number2;
-                    System.out.println(number1 + "+" + number2 + "= "+sum);
+                    int sum = numberOne + numberTwo;
+                    System.out.println(numberOne + "+" + numberTwo + "= " + sum);
                     break;
                 case 2:
-                    int subtract = number1 - number2;
-                    System.out.println(number1 + "-" + number2 + "="+subtract);
+                    int subtract = numberOne - numberTwo;
+                    System.out.println(numberOne + "-" + numberTwo + "=" + subtract);
                     break;
                 case 3:
-                    int multiply = number1 * number2;
-                    System.out.println(number1 + "*" + number2 + "="+multiply);
+                    int multiply = numberOne * numberTwo;
+                    System.out.println(numberOne + "*" + numberTwo + "=" + multiply);
                     break;
                 case 4:
-                    int divide = number1 / number2;
-                    System.out.println(number1 + "/" + number2 + "="+ divide);
+                    int divide = numberOne / numberTwo;
+                    System.out.println(numberOne + "/" + numberTwo + "=" + divide);
                     break;
                 default:
                     System.out.println("Invalid Operation");
             }
             System.out.println("Do you want to continue (y/n)");
             ch = reader.next();
-        }while(ch == "y" || ch == "Y");
+        } while (ch == "y" || ch == "Y");
 
     }
 }

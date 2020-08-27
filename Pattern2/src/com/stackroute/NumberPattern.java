@@ -1,6 +1,10 @@
 package com.stackroute;
 import java.util.Scanner;
-public class Pattern2{
+/*
+ *This class contains a method to print the following pattern
+ * 122333444......
+ */
+public class NumberPattern{
 
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
