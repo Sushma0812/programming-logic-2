@@ -42,7 +42,7 @@ public class Calculator {
                 default:
                     System.out.println("Invalid Operation");
             }
-            System.out.println("Do you want to continue (yes/no)");
+            System.out.println("Do you want to continue (y/n)");
             ch = reader.next();
         }while(ch == "y" || ch == "Y");
 
